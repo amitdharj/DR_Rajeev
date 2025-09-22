@@ -34,7 +34,7 @@ export default function AutismBookAd() {
           </div>
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=250&fit=crop" 
+              src="/image02.png" 
               alt="Mother with child"
               className="w-full h-40 md:h-48 object-cover"
             />
