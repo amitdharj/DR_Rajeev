@@ -43,7 +43,7 @@ export default function AutismBookAd() {
             </div>
           </div>
           <div className="p-3">
-            <div className="text-sm font-semibold text-gray-800">SAACHI CLINIC</div>
+            <div className="text-sm font-semibold text-gray-800">RANCHI CLINIC</div>
             <div className="text-xs text-gray-600">Treatment Success</div>
           </div>
         </div>
@@ -53,11 +53,10 @@ export default function AutismBookAd() {
   <div className="bg-white rounded-lg shadow-lg px-6 py-8 max-w-4xl w-full mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
-          <div className="flex items-center justify-center mb-4">
-            <span className="text-5xl md:text-6xl font-bold text-red-600 mr-2">1</span>
+          <div className="flex items-center justify-center mb-0">
+            <span className="display flex text-5xl md:text-6xl font-bold text-red-600 mr-1">1 <p className='text-2xl'>st</p></span>
             <div>
-              <span className="text-xl md:text-2xl font-bold text-gray-800">st</span>
-              <span className="text-2xl md:text-3xl font-bold text-black">Homeopathic Book In</span>
+              <span className="text-2xl md:text-3xl font-bold text-black mr-2"> Homeopathic Book In</span>
             </div>
           </div>
           <div className="text-center">
@@ -73,8 +72,8 @@ export default function AutismBookAd() {
         {/* Content Section */}
   <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Left Side - Hindi Quote */}
-          <div className="flex-1 text-center md:text-left">
-            <div className="text-xl md:text-2xl font-bold text-gray-800 mb-6 leading-relaxed">
+          <div className="flex-1 text-center md:text-center ">
+            <div className="text-xl md:text-3xl font-bold text-gray-800 mb-6 leading-relaxed">
               "अगर आपका बच्चा आपसे<br />
               बात करते वक्त नज़रें चुराता<br />
               है, और आपकी बातों को<br />
@@ -92,18 +91,18 @@ export default function AutismBookAd() {
           <div className="flex-1 text-center">
             <div className="relative mb-6">
               <img 
-                src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=300&h=400&fit=crop" 
+                src="/picture.png" 
                 alt="Autism Book Cover"
-                className="mx-auto rounded-lg shadow-lg w-48 sm:w-64 h-60 sm:h-80 object-cover"
+                className="mx-auto rounded-lg shadow-lg w-68 sm:w-full h-60 sm:h-70 object-cover"
               />
-              <div className="absolute top-3 sm:top-4 right-3 sm:right-4 bg-blue-600 text-white px-2 sm:px-3 py-1 sm:py-2 rounded-lg text-xs sm:text-sm font-bold text-center">
+              {/* <div className="absolute top-3 sm:top-4 right-3 sm:right-4 bg-blue-600 text-white px-2 sm:px-3 py-1 sm:py-2 rounded-lg text-xs sm:text-sm font-bold text-center">
                 HOMEOPATHY<br />
                 <span className="text-[10px] sm:text-xs">GET THE SAFE CARE FOR</span><br />
                 <span className="text-[10px] sm:text-xs">TREATING AUTISM</span>
-              </div>
-              <div className="absolute bottom-3 sm:bottom-4 right-3 sm:right-4 bg-white px-2 py-1 rounded shadow text-xs sm:text-sm font-bold">
+              </div> */}
+              {/* <div className="absolute bottom-3 sm:bottom-4 right-3 sm:right-4 bg-white px-2 py-1 rounded shadow text-xs sm:text-sm font-bold">
                 AUTISM BOOK
-              </div>
+              </div> */}
             </div>
             
             <div className="text-sm text-gray-600 mb-4">

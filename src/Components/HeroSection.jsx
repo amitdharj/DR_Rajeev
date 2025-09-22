@@ -7,14 +7,14 @@ export default function DrRajeevClinic() {
 
   // Placeholder images for the gallery
   const galleryImages = [
-    'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop',
-    'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=300&h=200&fit=crop',
-    'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=300&h=200&fit=crop',
-    'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&h=200&fit=crop',
-    'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=300&h=200&fit=crop',
-    'https://images.unsplash.com/photo-1582750433359-12e2f0b7e014?w=300&h=200&fit=crop',
-    'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop',
-    'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=300&h=200&fit=crop'
+    '/image01.png',
+    '/image02.png',
+    '/image03.png',
+    '/image04.png',
+    '/image05.png',
+    '/image01.png',
+    '/image05.png',
+    '/image03.png'
   ];
 
   const locations = ['DELHI NCR', 'NOIDA', 'KOLKATA', 'RANCHI', 'PATNA', 'JAGTAULI'];
@@ -36,9 +36,9 @@ export default function DrRajeevClinic() {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
               {/* Logo Section */}
               <div className="flex items-center space-x-4">
-                <div className="bg-gradient-to-r from-blue-500 to-cyan-500 p-3 rounded-full">
+                {/* <div className="bg-gradient-to-r from-blue-500 to-cyan-500 p-3 rounded-full">
                   <div className="text-white font-bold text-xl">Dr.</div>
-                </div>
+                </div> */}
                 <div>
                   <h1 className="text-2xl bg-gradient-to-bl from-orange-200 to-orange-300 bg-clip-text lg:text-3xl font-bold text-gray-800">
                     Dr. Rajeev's
@@ -50,7 +50,7 @@ export default function DrRajeevClinic() {
 
               {/* Main Title */}
               <div className="text-center lg:text-right">
-                <h2 className="text-2xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-600">
+                <h2 className="text-2xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
                   DR. RAJEEV'S HOMOEOPATHIC CLINIC
                 </h2>
                 <div className="flex flex-wrap justify-center lg:justify-end gap-2 mt-2">
@@ -72,7 +72,7 @@ export default function DrRajeevClinic() {
         </div>
 
         {/* Leading Network Badge */}
-        <div className="bg-gradient-to-r from-cyan-400 to-cyan-600 text-white py-3">
+        <div className="bg-gradient-to-r from-red-500 to-red-600 text-white py-3">
           <div className="container mx-auto text-center">
             <h3 className="text-xl lg:text-2xl font-bold animate-pulse">
               ONE OF LEADING HOMOEOPATHIC CLINIC NETWORK IN INDIA
@@ -88,7 +88,7 @@ export default function DrRajeevClinic() {
             {galleryImages.map((image, index) => (
               <div
                 key={index}
-                className={`relative overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-xl ${
+                className={`relative overflow-hidden rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl ${
                   index === currentImageIndex ? 'ring-4 ring-blue-400' : ''
                 }`}
                 style={{ transitionDelay: `${index * 50}ms` }}
@@ -96,7 +96,7 @@ export default function DrRajeevClinic() {
                 <img
                   src={image}
                   alt={`Clinic image ${index + 1}`}
-                  className="w-full h-62 md:h-60 object-cover transition-transform duration-500 hover:scale-110"
+                  className="w-full h-62 md:h-60 object-cover transition-transform duration-100 hover:scale-115"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-2">
@@ -143,12 +143,12 @@ export default function DrRajeevClinic() {
       {/* Main Quote Banner */}
       <section className={`py-12 transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
         <div className="container mx-auto px-4">
-          <div className="relative bg-gradient-to-r from-cyan-400 to-cyan-600 rounded-3xl p-8 md:p-12 shadow-2xl overflow-hidden">
+          <div className="relative bg-gradient-to-tl from-red-500 to-red-600 rounded-3xl p-8 md:p-12 shadow-2xl overflow-hidden">
             <div className="absolute inset-0 bg-black/10 rounded-3xl"></div>
             <div className="relative z-10 text-center">
               <blockquote className="text-white text-2xl md:text-4xl font-bold leading-relaxed">
                 "From struggle to strength — 
-                <span className="block mt-2 bg-white text-blue-600 px-6 py-2 rounded-full inline-block transform hover:scale-105 transition-transform duration-300">
+                <span className=" mt-2 bg-white text-blue-600 px-6 py-2 rounded-full inline-block transform hover:scale-105 transition-transform duration-300">
                   Successful Journeys With Our Care And Treatment
                 </span>
                 "
